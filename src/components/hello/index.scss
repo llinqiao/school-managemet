@@ -1,0 +1,8 @@
+@import '@/css/var.scss';
+
+.scroll-wrapper {
+  // overflow: hidden;
+  overflow: scroll;
+  height: 500px;
+  color: $blue;
+}

@@ -1,0 +1,30 @@
+$primary: #fedc34;
+$notVisiblePrimary:rgba(255,221,53,0.3);
+$baseFontSize: 24px;
+$smallFontSize: 0.83rem;
+
+/* 28px */
+
+$bigFontSize: 1.17rem;
+$mainFontColor: #323333;
+$minorFontColor: #999;
+$borderColor: #aeaeae;
+$bgColor: #e5e9f0;
+$bgColorNew: #f5f5f5;
+$blue: #17c0ff;
+$red: #f46868;
+$gray: #333;
+$white: #fff;
+$line:rgba(0, 0, 0, 0.1);
+// shadow
+@mixin shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}
+
+// blue button
+@mixin blueBtn {
+  background-image: linear-gradient(-143deg, #33e2ff 0%, $blue 100%);
+  box-shadow: 0 4px 9px 0 rgba(23, 192, 255, 0.35);
+  color: $white;
+  text-align: center;
+}

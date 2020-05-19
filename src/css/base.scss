@@ -1,0 +1,238 @@
+@import './var';
+* {
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+html {
+  height: 100%;
+  background-color: #fff;
+  font-size: $baseFontSize;
+  -overflow-y: scroll;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  color: $mainFontColor;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC',
+    'WenQuanYi Micro Hei', sans-serif !important;
+
+  /* background: #f7f7f7; */
+  line-height: 1.666;
+  -webkit-text-size-adjust: none;
+}
+
+body,
+input,
+textarea {
+  font-family: arial;
+}
+
+header,
+footer,
+section,
+aside,
+article,
+nav,
+hgroup,
+figure,
+figcaption,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+form,
+p,
+dl,
+dt,
+dd,
+blockquote,
+legend,
+table,
+th,
+td,
+fieldset,
+menu,
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+table,
+th,
+td,
+img,
+fieldset {
+  border: 0;
+}
+
+time,
+mark,
+output,
+meter,
+address,
+cite,
+em,
+code,
+var,
+dfn,
+ins,
+i,
+th,
+caption {
+  font-style: normal;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+input,
+select,
+button,
+textarea,
+table {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  outline: none;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+caption {
+  text-align: left;
+}
+
+header,
+footer,
+section,
+aside,
+article,
+nav,
+hgroup,
+figure,
+figcaption {
+  display: block;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  color: $mainFontColor;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  content: normal !important;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  -webkit-appearance: none;
+  background: none;
+  line-height: inherit;
+  outline: none;
+}
+
+.header,
+.content,
+.footer {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.row {
+  overflow: hidden;
+  clear: both;
+}
+
+*[disabled] {
+  pointer-events: none;
+}
+
+/* 单选 */
+
+input[type='radio'],
+input[type='checkbox'] {
+  width: 38px;
+  height: 38px;
+  background: url(../assets/no.png) no-repeat center center / cover;
+}
+
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+  background: url(../assets/yes.png) no-repeat center center / cover;
+}
+
+#app {
+  height: 100%;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+//焦点时也加上，不加会出现黄色背景闪动一下
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
